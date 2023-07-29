@@ -11,6 +11,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(LIBRARY_NAME Library)
 set(EXECUTABLE_NAME executable)
 
+add_subdirectory(configs)
 add_subdirectory(src)
 add_subdirectory(app)
 
