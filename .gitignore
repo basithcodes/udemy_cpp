@@ -2,7 +2,8 @@ CMakeFiles
 build
 .cache/clangd/index
 .cmake/api/v1/reply
-Makefile
 cmake_install.cmake
 compile_commands.json
 CMakeCache.txt
+app/Makefile
+src/Makefile
