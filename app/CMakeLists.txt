@@ -1,2 +1,2 @@
-add_executable(executable main.cpp)
-target_link_libraries(executable PUBLIC Library)
+add_executable(${EXECUTABLE_NAME} main.cpp)
+target_link_libraries(${EXECUTABLE_NAME} PUBLIC ${LIBRARY_NAME})
