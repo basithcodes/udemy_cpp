@@ -11,6 +11,12 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(LIBRARY_NAME Library)
 set(EXECUTABLE_NAME executable)
 
+
+set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/") # Include the folder which contains the cmake modules
+include(add_git_submodule) # from cmake modules folder include the specific file which contains our function which we want to use
+add_git_submodule_func(external_libraries/nlohmann/json) # See this func description for its usage
+
+# add_subdirectory(external_libraries/nlohmann_json) # If lib is available locally then use this 
 add_subdirectory(configs)
 add_subdirectory(src)
 add_subdirectory(app)

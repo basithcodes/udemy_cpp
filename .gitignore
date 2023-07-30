@@ -5,8 +5,3 @@ build
 cmake_install.cmake
 compile_commands.json
 CMakeCache.txt
-app/Makefile
-src/Makefile
-app/executable
-configs/Makefile
-src/libLibrary.a
