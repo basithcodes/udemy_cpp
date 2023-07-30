@@ -1,5 +1,4 @@
 prepare:
-	mkdir build
 	mkdir -p build/graphviz
 	cmake -S . -B build
 	cmake --build build
@@ -9,3 +8,4 @@ prepare:
 
 clean:
 	rm -rf build
+	mkdir build
