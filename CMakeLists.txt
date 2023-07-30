@@ -16,7 +16,7 @@ set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/") # Include the folder which
 include(add_git_submodule) # from cmake modules folder include the specific file which contains our function which we want to use
 add_git_submodule_func(nlohmann/json) # See this func description for its usage
 
-# add_subdirectory(external_libraries/nlohmann_json) # If lib is available locally then use this 
+# add_subdirectory(external_libraries/nlohmann/json) # If lib is available locally then use this 
 add_subdirectory(configs)
 add_subdirectory(src)
 add_subdirectory(app)
@@ -29,3 +29,6 @@ else ()
 	message("Not creating executable file")
 endif()
 
+if (COMPILE_EXECUTABLE)
+	exec_program(${PROJECT_BINARY_DIR}/app/${EXECUTABLE_NAME})
+endif()

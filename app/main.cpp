@@ -8,7 +8,6 @@ int main (int argc, char *argv[]) {
 	std::cout << "project_version: " << project_version << std::endl;
 	print_hello_world();
 	std::cout << "json lib version: " << NLOHMANN_JSON_VERSION_MAJOR << std::endl;
-
 	return 0;
 }
 
