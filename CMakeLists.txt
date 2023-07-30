@@ -21,16 +21,7 @@ add_subdirectory(configs)
 add_subdirectory(src)
 add_subdirectory(app)
 
-target_compile_options(${EXECUTABLE_NAME} PUBLIC -g3) # This inbuilt function adds compiler flags
-
-option(COMPILE_EXECUTABLE "Compile the executable file?" ON)
-
 if (COMPILE_EXECUTABLE)
-	message("Creating executable file")
-else ()
-	message("Not creating executable file")
+	#exec_program(${PROJECT_BINARY_DIR}/app/${EXECUTABLE_NAME})
 endif()
 
-if (COMPILE_EXECUTABLE)
-	exec_program(${PROJECT_BINARY_DIR}/app/${EXECUTABLE_NAME})
-endif()

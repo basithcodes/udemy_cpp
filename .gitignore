@@ -6,3 +6,5 @@ cmake_install.cmake
 compile_commands.json
 CMakeCache.txt
 external_libraries/nlohmann/json
+docs/html
+docs/latex
